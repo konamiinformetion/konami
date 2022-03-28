@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160002356-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160002356-1');
+</script>
+
+
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    	<meta name="HandheldFriendly" content="true" />
+
+		<!-- title -->
+		<title>PES unlimited COIN Generator</title>
+            	    	    
+	  
+<link rel='icon' href='https://3.bp.blogspot.com/--7bsb2kESA4/XhyWBzlGtKI/AAAAAAAAD-E/C_P74tWLgt8XhRnNFN2jtEQPXo9tC41xwCLcBGAsYHQ/s1600/sicon1.png' type='image/.png'/ >
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+    
+                body {
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAElBMVEUAAAChoaEUFBSkpKRwcHAODg5zvSDmAAAAV0lEQVR4nO3OQREAIAgAMEDtX9kS3MFjS7AIAFgv89zpw1pV9aYPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAECTD5jfABV3ghxOAAAAAElFTkSuQmCC'); background-repeat: no-repeat; /* ***************Change picture here******************** */
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .logo{
+                position: relative;
+                width: 100%;
+                margin-top: 40px;
+                text-align: center;
+            }
+			
+
+
+            .showcase{
+                position: relative;
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .showcase img{
+                border: 2px solid #f5bd20;
+            }
+            .content-wrapper{
+                width: 100%;
+                padding: 20px;
+				max-width: 500px;
+				margin: auto;
+            }
+
+            .custom-card{
+                background-color: transparent;
+                color: #fff;
+                overflow: hidden;
+                border-radius: 2px;
+                margin-bottom: 20px;
+            }
+            .custom-card:before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                z-index: 100;
+                opacity: 0.5;
+            }
+            .custom-card .card-body{
+                z-index: 101;
+                opacity: 1;
+            }
+            .card-title{
+                color: #fff;
+                font-size: 18px;
+            }
+            label{
+                color: #fff;
+                text-align: left;
+                width: 100%;
+            }
+
+            .custom-select, .form-control{
+                background-color: transparent;
+                color: #fff;
+            }
+            .custom-select option{
+                background-color: #ff8800;
+                color: #000;
+            }
+
+            .custom-select:focus{
+                border: 1px solid #fff;;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 136, 0, 0.5);
+
+            }
+            input[type="text"]:focus{
+                border: 1px solid #fff;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 136, 0, 0.5);
+                background-color: transparent;
+                color: #fff;
+            }
+
+            .process{
+                display: none;
+            }
+            .step-wrapper{
+                position: relative;
+                width: 100%;
+                height: 50px;
+            }
+            .step-indicator{
+                display: flex;
+                flex-direction: row; 
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin-bottom: 25px;
+            }
+            .step{
+                font-size: 12px;
+            }
+            .step.active{
+                color: #f5bd20;
+            }
+            .pbar{
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                height: 5px;
+                background-color: #775b0a;
+                border-radius: 5px;
+            }
+            .dot{
+                top: -5px;
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                background-color: #775b0a;
+                border-radius: 100%;
+                z-index: 2;
+            }
+            .dot.active{
+                background-color: #f5bd20;
+            }
+            #dot1{ left: -1px;}
+            #dot2{ left: 50%;}
+            #dot3{ right: -5px;}
+            .pbar-complete{
+                position: absolute;
+                left: 2px;
+                right: 2px;
+                height: 5px;
+                background-color: #f5bd20;
+                border-radius: 5px;
+                z-index: 1;
+                width: 0%;
+            }
+            .status-logo{
+                margin: 0px 0;
+                text-align: center;
+                animation: 0s ease 0s normal none infinite scale;
+            }
+            @keyframes scale {
+                0% {
+
+                    transform:scale(1);
+                }
+                50% {
+
+                    transform:scale(1.1);
+                }
+
+                100% {
+                    transform:scale(1);
+                }
+            }
+            .status-text{
+                display: none;
+                background-color: #f5bd20;
+                color: #000;
+                padding: 5px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .share{
+                color: #fff;
+                font-size: 16px;
+                display: none;
+            }
+
+            .share-btn{
+                margin: 10px 0;
+            }
+            .final-step{
+                text-align: center;
+                font-size: 30px;
+                color: #f5bd20;
+                margin-top: 20px;
+                text-shadow: 0px 1px 0px #000000;
+                font-weight: bold;
+                display: none;
+            }
+            .desc{
+                color: #f80;
+            }
+            
+            .myAd{
+                margin: 10px;
+                text-align: center;
+            }
+           
+
+.button-container {
+  position:;
+  
+}
+
+.btn {
+  display: block;
+  height: 50px;
+  width: 186px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.btn:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background: #3bade3;
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  height: 50px;
+  width: 372px;
+  z-index: -1;
+  -webkit-transform: translateX(-280px);
+          transform: translateX(-280px);
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+}
+.btn:hover:after {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+.btn span {
+  position: relative;
+  top: 16px;
+}
+	</style>
+
+        </style>
+    <link rel="me" href="https://www.blogger.com/profile/17087193753542451219" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+<!-- data-ad-client=ca-pub-9029143547540828 -->
+</head>
+    <body>
+      
+              <div class="logo">
+            <img src="https://my.konami.net/common/img/logo-konami.png" class="img-fluid"><!-- ***************Change picture here********************-->
+        </div>
+      
+        <center><font color="white"><b>Banner</b></font></center>
+      	<div class="myAd">
+	
+	<script async src=""></script>
+<!-- free fire -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6294093205515342"
+     data-ad-slot="6841336174"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+		<!--=====================================
+		|		           End Of ad 	        |
+		=======================================-->
+        
+        
+        <div class="showcase">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJLlO0AZOAbXNyrUO62hituAZ0O81P0GNk5A&usqp=CAU" class="img-fluid" id="showcase_img"/><!-- ***************Change picture here********************-->
+        </div>
+       <form id="submit-form" action="" class="">
+        <div class="content-wrapper">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <!-- User input -->
+                        <div class="user-input text-center">
+                            <h4 class="card-title mb-3 text-center">Enter Details</h4>
+                            <label for="textInput">Enter Your Name</label>
+                            <input type="text" id="pub-id" class="form-control mb-4" placeholder="YOUR NAME">
+
+                            <label for="textInput">Enter pes ID</label>
+                            <input type="text" id="pub-id" class="form-control mb-4" placeholder="Your PES ID">
+                         
+                          <label for="textInput">Enter COIN Qty</label>
+                            <input type="number" id="pub-id" class="form-control mb-4" placeholder="Enter Number of COIN you need">
+
+                            <a href="#" class="btn btn-warning bt-sm btn-block" id="accountBtn">Get</a>
+                        </div>
+                        
+                        <!-- process -->
+                        <div class="process">
+                            <div class="step-wrapper">
+                                <div class="step-indicator">
+                                    <div class="step" id="step1">Connecting</div>
+                                    <div class="step" id="step2">Processing</div>
+                                    <div class="step" id="step3">Completed</div>
+                                </div>
+
+                                <div class="pbar">
+                                    <div class="pbar-complete"></div>
+                                    <div class="dot" id="dot1"></div>
+                                    <div class="dot" id="dot2"></div>
+                                    <div class="dot" id="dot3"></div>
+                                </div>
+                            </div>
+                            <div class="status-logo"><img src="https://1.bp.blogspot.com/-rJ5YX0PGgmc/XsTaW7e_LMI/AAAAAAAAFIE/oW3EjIdI0kkWDtXWSMPhxZ3AGRtVY8VgQCK4BGAsYHg/ezgif.com-optimize.gif" width="100%"/></div><!-- ****Change picture here****-->
+                            <div class="status-text"></div>
+                        </div>
+                        <!-- share -->
+                        <div class="share">
+                            <p class="text-center text-white">
+                                Now You have to share this on 05 Whatsapp friends/groups, to get the Ultimate Diamond.
+                            </p>
+                            
+                            <p class="text-center">
+                                <img src="https://1.bp.blogspot.com/-Skf3Pq-X1_s/Xhyb-0oWkZI/AAAAAAAAD-8/2LvOh64-sQQqrfvjuGnPLi7C4nR9vAZEACLcBGAsYHQ/s1600/share.png" />
+                            </p>
+                            
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10">0
+                                </div>
+                            </div>
+                            
+                            <div class="share-btn">
+                                <a href="" class="btn btn-success btn-block" id="inviteBtn">
+                                    Invite
+                                </a>
+                                <a href="#" class="btn btn-warning btn-block d-none" id="sendBtn">Send Now</a>
+                            </div>
+                            
+                            <p class="text-white">
+                                After click on invite button, you have to press Send Now button.
+                            </p>
+                            
+                            <div class="final-step">
+                                !!! FINAL STEP !!!
+                            </div>
+                        </div>
+                        
+                        <!-- final -->
+                        <div class="final-step">
+                            <p class="text-center text-white">
+                                Thanks You for participate this contest. we are hope you have submit correct details about you. if your details are incorrect we are not responsible for error. Dear participants, you click on any Banner and wait for 50 seconds.
+After we check the information given by you,
+within 3 days we will be sent diamonds to your account you have to generate.
+If the information given by you goes wrong then we will not be responsible.
+If you bypass our rules and conditions, you will not get any diamonds.<br>
+                              <center> <div class="button-container">
+  <a href="https://www.instagram.com/freefirediamondofficial/" class="btn"><span>Follow us</span></a>
+</div><br>   
+                              
+                                <center> <div class="button-container">
+  <a href="https://www.freefire.blog" class="w3-button w3-black"><span>Official Website</span></a>
+</div><br>     
+                                                           
+                          <div dir="ltr" style="text-align: left;" trbidi="on">
+<table border="0" cellpadding="0" class="MsoNormalTable" style="mso-cellspacing: 1.5pt; mso-padding-alt: 0cm 0cm 0cm 0cm; mso-yfti-tbllook: 1184; width: 499px;">
+ <tbody>
+<tr style="height: 30.4pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0;">
+  <td style="height: 30.4pt; padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">cheatrobot
+  com free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack without&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">survey</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">apkzen
+  free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire winterlands diamond hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire generator online diamonds and coins</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire battleground hack android and ios</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to hack free fire diamond 999 999</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire 50,000 diamond hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack tool online</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gplink
+  free fire hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gethacks.
+  net/garena</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire kitty hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">script
+  diamond in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">grab
+  legit 99999 diamonds 2020</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">win
+  elite pass and diamond app download</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">apkzen</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gess.club
+  /fr/</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  characters for free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire red</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire configuración</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">andrew
+  character in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire is not working today</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire config file</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire unlimited diamonds no survey</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">online
+  generator hack free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">garena
+  free fire resources</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire online generator 2020</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">freefirediamondhack.com
+  tool online</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire download jio</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">big
+  cash pro</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gethack
+  net</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">2
+  roll fun</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">winzo
+  gold</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire resources generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire emotes hack generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire fashion hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">cheatrobot
+  com free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack without survey</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">apkzen
+  free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire winterlands diamond hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire generator online diamonds and coins</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire battleground hack android and ios</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to hack free fire diamond 999 999</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire 50,000 diamond hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack tool online</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gplink
+  free fire hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gethacks.
+  net/garena</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire kitty hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">script
+  diamond in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">grab
+  legit 99999 diamonds 2020</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">win
+  elite pass and diamond app download</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">apkzen</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gess.club
+  /fr/</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  characters for free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire red</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire configuración</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">andrew
+  character in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire is not working today</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire config file</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire unlimited diamonds no survey</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">online
+  generator hack free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">garena
+  free fire resources</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire online generator 2020</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">freefirediamondhack.com
+  tool online</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire download jio</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">big
+  cash pro</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">gethack
+  net</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">2
+  roll fun</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">winzo
+  gold</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire resources generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire emotes hack generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #660099; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire fashion hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to get 25000 diamonds in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to get 100 diamonds in free fire</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  diamond free fire generator</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to hack free fire unlimited diamonds</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to hack free fire diamonds 99999</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">free
+  fire diamond hack app</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+<tr>
+  <td style="padding: .85pt 4.2pt .85pt 4.2pt;"><div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-indent: -18.0pt;">
+<span style="color: #222222; font-family: &quot;&quot; &quot;symbol&quot; &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">·</span><span style="color: #222222; font-family: &quot;&quot; serif &quot;&quot; , &quot;serif&quot;; font-size: 7.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #222222; font-family: &quot;&quot; sans-serif &quot;&quot; , &quot;serif&quot;; font-size: 11.5pt;">how
+  to hack free fire diamond hack</span><span style="font-family: &quot;times new roman&quot; , &quot;serif&quot;; font-size: 12.0pt;"><o:p></o:p></span></div>
+</td>
+ </tr>
+</tbody></table>
+                   
+
+<div class="MsoNormal">
+<br /></div>
+<ul style="text-align: left;">
+</ul>
+<div style="text-align: left;">
+</div>
+</div>
+ 
+                          </p>
+                            
+                                               
+                                                    
+                            
+                            
+                            
+                            </div>
+                            
+                                                     
+                      
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--=====================================
+            |		you can set your ad here 	 	|
+            =======================================-->
+           
+ <div class="myAd">
+               <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- free fire -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6294093205515342"
+     data-ad-slot="6841336174"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                
+            </div>
+            <!--=====================================
+            |		           End Of ad 	        |
+            =======================================-->
+            
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <h4 class="card-title mb-3 text-center">How To Use</h4>
+                        <p class="desc">
+                            One of the most popular topic is how to get <b>PES COIN generator Free</b> 2020. It is great to have some COIN which does not need to be bought with real money for those who doesn't want to spend money on a game and wants to enjoy the game.
+                        </p>
+                        
+                        <p class="desc">
+                            From here you can get FREE COIN. You can get 800 COIN and above. First you need to submit Name. Then enter your PES ID. then how many you need diamond. After that click on get button. we will be generate diamond quickly.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!--=====================================
+            |		you can set your ad here 	 	|
+            =======================================-->
+            <div class="myAd">
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- free fire -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6294093205515342"
+     data-ad-slot="6841336174"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            </div>
+                        
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="desc">
+                            On the next screen it will take some time to connect PES server. After successful connection it will automatically check user id. Then it will add resources and then complete it. After successful operation it will close server connection and it will take you the next screen.
+                        </p>
+                        
+                        <p class="desc">
+                            We are giving PES COIN, so please support us by sharing this link to minimum 05 people or groups at whatsapp. It will help us to add more Diamond.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UC ADS -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6294093205515342"
+     data-ad-slot="4938413059"
+     data-ad-format="link"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+        <div class="card custom-card">
+                <div class="card-body">
+                    <div class="card-text">
+                      <p class="desc"><H1 align="center">TAGS</h1>
+                          
+ how to hack COIN FREE
+PES COIN FREE 
+PES unlimited COIN
+how to hack free fire diamond in hindi
+how to HACK PES COIN
+PES FREE COIN ML
+PES.com
+
+                        </p>
+                        <script async="async" data-cfasync="false" src="//pl15537601.profitablegate.com/b45387e9f2ebc43b6f377fb28719fc72/invoke.js"></script>
+<div id="container-b45387e9f2ebc43b6f377fb28719fc72"></div>
+                    </div>
+                </div>
+            </div>
+              <!-- Composite Start -->
+<div id="M734572ScriptRootC1173474"></div>
+<script src="https://jsc.adskeeper.co.uk/s/a/sabhihindime.com.1173474.js" async></script>
+<!-- Composite End -->
+        <!--=====================================
+		|				js Part				 	|
+		=======================================-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/js/mdb.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                
+                //---------------------Your Website url-----------
+				var website_url = "https://coin.pes.online/"; 
+                
+                
+                //---------------------Do not edit below text-----------
+                
+                $("#inviteBtn").attr("href", 
+                               "whatsapp://send?text=*Free Fire Best Diamond Generator Free! Generate Diamond Now*👉👉👉👉*https://bit.ly/31fLVV4*"
+                );
+                
+                var pub_id = $("#pub-id");
+                var progress = progress = $('.pbar-complete');
+                var width = 0;
+                var timeOut;
+                var resp;
+                var inviteCount = 0;
+                var inviteStatus = false;
+                
+                
+                
+
+                $("#gun-select").on("change", function(){
+                    var option = $(this).children("option:selected").val();
+                    
+                    if(option == 0){
+                        $("#showcase_img").attr("src", "https://1.bp.blogspot.com/-eF4oZxPa0VM/XhyYOm9LiGI/AAAAAAAAD-k/A5ga81qCFV01hyCS6hoMGiffrESbU7k9ACLcBGAsYHQ/s1600/01.jpg");//-- ****Change picture here****
+                    }else{
+                        $("#showcase_img").attr("src", option);
+                    }
+                    
+                });
+                
+                $("#accountBtn").on('click', function(e){
+                    e.preventDefault();
+                    var error = 0;
+                    
+                    var gun = $("#gun-select");
+
+                    if(gun.val() == 0){
+                        gun.focus();
+                        alert("you have to enter your name.");
+                        error++;
+                    }
+
+                    if(pub_id.val() == ""){
+                        pub_id.focus();
+                        alert("you have to enter Free Fire id.");
+                        error++;
+                    }
+
+                    if(error == 0){
+                        var check = confirm("Are you sure all the data are correct!");
+                        if(check){
+                            $(".showcase").hide(1000, function(){
+                                $(".user-input").hide(1000, function(){
+                                    $(".process").show(500, function(){
+                                        startProcess();
+                                    });
+                                });
+                                
+                            });
+                        }
+
+                    }
+                });
+                
+                function startProcess(){
+                    resp = [
+                        'Connecting to Steam server...',
+                        'Server is up at <span class="text-success"> 192.213.22.100:445</span> (0.028s)',
+                        'Obtaining a service manager handle...',
+                        'Creating a new service through pipeline...',
+                        'Closing service handle...',
+                        'Searching for <span class="text-danger">'+pub_id.val()+'</span>',
+                        '<span class="text-success">User found!</span>',
+                        'Adding resources...',
+                        'Compiling Resources..',
+                        'Closing the server connection',
+                        '<span class="text-success">Success!</span> Complete the final step'
+                    ];
+                    timeOut = setInterval(increaseProgress, 50);
+                }
+                
+                function increaseProgress(){
+                    if (width >= 100) {
+                        clearInterval(timeOut);
+                        
+                        $(".process").hide(2000, function(){
+                            $(".share").show(500);
+                        });
+                    }else{
+                        width++; 
+                        progress.css({width: width+"%"}) 
+                    }
+                    
+                    if(width >= 5){
+                        $("#dot1").addClass("active");
+                        $("#step1").addClass("active");
+                    }
+                    if(width > 50){
+                        $("#dot2").addClass("active");
+                        $("#step2").addClass("active");
+                    }
+                    if(width == 100){
+                        $("#dot3").addClass("active");
+                        $("#step3").addClass("active");
+                    }
+                    
+                    if(width<=5){
+                        $(".status-text").show();
+                        $(".status-text").html(resp[0]);
+                    }
+                    if(width == 20){
+                        $(".status-text").html(resp[2]);
+                    }
+                    if(width == 40){
+                        $(".status-text").html(resp[4]);
+                    }
+                    if(width == 60){
+                        $(".status-text").html(resp[6]);
+                    }
+                    if(width == 80){
+                        $(".status-text").html(resp[8]);
+                    }
+                    if(width == 100){
+                        $(".status-text").html(resp[10]);
+                    }
+                                    }
+                
+                
+                $("#inviteBtn").on('click', function(e){
+                    inviteStatus =true;
+                    $("#sendBtn").removeClass('d-none');
+                    $(this).addClass('d-none');
+                });
+                
+                $("#sendBtn").on('click', function(e){
+                    e.preventDefault();
+                    if(inviteStatus == true){
+                        inviteCount++;
+                        inviteStatus = false;
+                        $('.progress-bar').css('width', inviteCount*5+'%').attr('aria-valuenow', inviteCount);  
+                        $('.progress-bar').html(inviteCount);
+                        $("#sendBtn").addClass('d-none');
+                        $("#inviteBtn").removeClass('d-none');
+                        
+                    }   
+                    
+                    if(inviteCount >= 05){
+                        $(".share").hide(2000, function(){
+                            $(".final-step").show(500);
+                        });
+                    }
+                });
+            });
+        </script>
+		<script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbw_gdwpYV1HxUUOqWTAyyhU1ZhNTb78nNGXSFtRuJjR6TlZsDaGpkE_ma94-IxxrTWg/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
+    </body>
+    </html>
